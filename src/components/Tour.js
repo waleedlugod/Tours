@@ -1,10 +1,10 @@
 import React from "react";
 
-function Tour({ img, name, info, image, price }) {
+function Tour({ name, info, image, price }) {
 	return (
-		<>
-			<img src={img} alt={name} />
-		</>
+		<div className="container">
+			<h4>{name}</h4>
+		</div>
 	);
 }
 
