@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Tour from "./Tour";
+import Card from "./Card";
 
 const url = "https://course-api.com/react-tours-project";
 
-function Tours() {
+function Cards() {
 	const [tours, setTours] = useState([]);
 
 	async function getData() {
@@ -19,10 +19,10 @@ function Tours() {
 	return (
 		<>
 			{tours.map((tour) => {
-				return <Tour key={tour.id} {...tour} />;
+				return <Card key={tour.id} {...tour} />;
 			})}
 		</>
 	);
 }
 
-export default Tours;
+export default Cards;

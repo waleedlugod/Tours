@@ -1,5 +1,5 @@
 import "./App.css";
-import Tours from "./components/Tours";
+import Tours from "./Cards";
 
 function App() {
 	return (
