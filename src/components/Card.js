@@ -16,8 +16,11 @@ function Card({ name, info, image, price }) {
 				</div>
 				<p>
 					{show ? info : info.substring(0, 200) + "..."}
-					<button onClick={() => setShow(!show)}>Show Less</button>
+					<button className="sl-btn" onClick={() => setShow(!show)}>
+						Show Less
+					</button>
 				</p>
+				<button className="ni-btn">Not Interested</button>
 			</div>
 		</div>
 	);
