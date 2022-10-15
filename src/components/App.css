@@ -146,8 +146,9 @@ p {
 	background-position: center;
 }
 .container {
-	display: grid;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	gap: 30px;
 }
 .card-header {
@@ -163,8 +164,9 @@ p {
 }
 .header {
 	margin: 80px;
-	display: grid;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .line {
 	background-color: var(--clr-primary-5);
@@ -177,6 +179,17 @@ p {
 	color: var(--clr-primary-5);
 	padding: 5px;
 	border-radius: 5px;
+}
+.refresh-btn {
+	background-color: var(--clr-primary-5);
+	border: none;
+	color: var(--clr-white);
+	font-size: 1.2rem;
+	letter-spacing: var(--spacing);
+	border-radius: var(--radius);
+	padding: 8px;
+	margin-top: 40px;
+	cursor: pointer;
 }
 .sl-btn {
 	color: var(--clr-primary-5);
