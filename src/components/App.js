@@ -1,11 +1,11 @@
 import "./App.css";
 import Tours from "./Cards";
+import Header from "./Header";
 
 function App() {
 	return (
 		<div className="container">
-			<h2>Our Tours</h2>
-			<div className="line"></div>
+			<Header />
 			<Tours />
 		</div>
 	);

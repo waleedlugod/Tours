@@ -7,7 +7,9 @@ function Card({ name, info, image, price }) {
 				className="image-container"
 				style={{ backgroundImage: `url(${image})` }}
 			></div>
-			<h4>{name}</h4>
+			<div className="desc">
+				<h4>{name}</h4>
+			</div>
 		</div>
 	);
 }
