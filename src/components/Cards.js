@@ -12,6 +12,10 @@ function Cards() {
 		setTours(data);
 	}
 
+	function handleRemoveTour(id) {
+		setTours(() => tours.filter((tour) => tour.id != id));
+	}
+
 	useEffect(() => {
 		getData();
 	}, []);
@@ -19,7 +23,9 @@ function Cards() {
 	return (
 		<>
 			{tours.map((tour) => {
-				return <Card key={tour.id} {...tour} />;
+				return (
+					<Card key={tour.id} {...tour} handleRemoveTour={handleRemoveTour} />
+				);
 			})}
 		</>
 	);

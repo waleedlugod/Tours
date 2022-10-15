@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Card({ name, info, image, price }) {
+function Card({ id, name, info, image, price, handleRemoveTour }) {
 	const [show, setShow] = useState(true);
 
 	return (
@@ -20,7 +20,9 @@ function Card({ name, info, image, price }) {
 						Show Less
 					</button>
 				</p>
-				<button className="ni-btn">Not Interested</button>
+				<button className="ni-btn" onClick={() => handleRemoveTour(id)}>
+					Not Interested
+				</button>
 			</div>
 		</div>
 	);
